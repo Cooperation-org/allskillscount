@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Box,
   Typography,
@@ -6,14 +6,11 @@ import {
   Card,
   CardContent,
   Container,
-  useMediaQuery,
-  useTheme,
   Fab,
   CardMedia,
 } from '@mui/material';
 
 const Home = () => {
-  const theme = useTheme();
   const [showScrollTop, setShowScrollTop] = useState(false);
 
   useEffect(() => {
