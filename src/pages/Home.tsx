@@ -81,7 +81,7 @@ const Home = () => {
                   marginTop: 4,
                 }}
               >
-                <Button
+                {/* <Button
                   variant="contained"
                   href="#contact"
                   sx={{
@@ -99,7 +99,7 @@ const Home = () => {
                   }}
                 >
                   Get in Touch
-                </Button>
+                </Button> */}
                 <Button
                   variant="outlined"
                   href="#projects"
@@ -253,7 +253,7 @@ const Home = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  href="https://www.opencreds.net/"
+                  href="https://linkedclaims-author.allskillscount.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
@@ -313,7 +313,7 @@ const Home = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  href="https://resume-author.vercel.app/"
+                  href="https://resume.allskillscount.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
