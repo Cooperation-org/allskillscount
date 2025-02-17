@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react'
 import {
   Box,
   Typography,
@@ -7,56 +7,53 @@ import {
   CardContent,
   Container,
   Fab,
-  CardMedia,
-} from '@mui/material';
+  CardMedia
+} from '@mui/material'
 
 const Home = () => {
-  const [showScrollTop, setShowScrollTop] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
-      setShowScrollTop(window.scrollY > 400);
-    };
+      setShowScrollTop(window.scrollY > 400)
+    }
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
 
   return (
-    <Box
-      component="main"
-      sx={{ width: '100%' }}
-    >
+    <Box component='main' sx={{ width: '100%' }}>
       {/* Hero Section */}
       <Box
         sx={{
           background: '#FFFFFF',
-          padding: { xs: '60px 20px', md: '80px 40px' },
+          padding: { xs: '60px 20px', md: '80px 40px' }
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <Box
             sx={{
               display: 'grid',
               gridTemplateColumns: { xs: '1fr', md: '1fr 1fr' },
               gap: { xs: 4, md: 8 },
-              alignItems: 'center',
+              alignItems: 'center'
             }}
           >
             {/* Left Content */}
             <Box sx={{ textAlign: { xs: 'center', md: 'left' } }}>
               <Typography
-                variant="h1"
+                variant='h1'
                 sx={{
                   fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
                   fontWeight: 800,
                   marginBottom: 3,
                   color: '#1A1A1A',
-                  lineHeight: 1.2,
+                  lineHeight: 1.2
                 }}
               >
                 Unleash Your Online Potential with Our Creative Web Agency
@@ -66,19 +63,19 @@ const Home = () => {
                   fontSize: { xs: '1.1rem', md: '1.25rem' },
                   marginBottom: 4,
                   color: '#666666',
-                  lineHeight: 1.6,
+                  lineHeight: 1.6
                 }}
               >
-                Let our creative web agency help you reach new heights online.
-                From custom web design to development services, we've got the
-                skills and experience to bring your vision to life.
+                Let our creative web agency help you reach new heights online. From custom
+                web design to development services, we've got the skills and experience to
+                bring your vision to life.
               </Typography>
               <Box
                 sx={{
                   display: 'flex',
                   gap: 2,
                   justifyContent: { xs: 'center', md: 'flex-start' },
-                  marginTop: 4,
+                  marginTop: 4
                 }}
               >
                 {/* <Button
@@ -101,8 +98,8 @@ const Home = () => {
                   Get in Touch
                 </Button> */}
                 <Button
-                  variant="outlined"
-                  href="#projects"
+                  variant='outlined'
+                  href='#projects'
                   sx={{
                     padding: '12px 32px',
                     borderRadius: '8px',
@@ -114,8 +111,8 @@ const Home = () => {
                     '&:hover': {
                       borderColor: '#3929B4',
                       backgroundColor: 'rgba(76, 58, 227, 0.04)',
-                      transform: 'translateY(-2px)',
-                    },
+                      transform: 'translateY(-2px)'
+                    }
                   }}
                 >
                   Learn More
@@ -128,17 +125,17 @@ const Home = () => {
               sx={{
                 display: { xs: 'none', md: 'flex' },
                 justifyContent: 'center',
-                alignItems: 'center',
+                alignItems: 'center'
               }}
             >
               <Box
-                component="img"
-                src="../images/portfolio.svg"
-                alt="Creative Web Design Illustration"
+                component='img'
+                src='../images/portfolio.svg'
+                alt='Creative Web Design Illustration'
                 sx={{
                   width: '100%',
                   maxWidth: '600px',
-                  height: 'auto',
+                  height: 'auto'
                 }}
               />
             </Box>
@@ -148,21 +145,21 @@ const Home = () => {
 
       {/* About Section */}
       <Box
-        id="about"
+        id='about'
         sx={{
           padding: { xs: '60px 20px', md: '80px 40px' },
-          background: '#F8F9FA',
+          background: '#F8F9FA'
         }}
       >
-        <Container maxWidth="md">
+        <Container maxWidth='md'>
           <Typography
-            variant="h2"
-            align="center"
+            variant='h2'
+            align='center'
             sx={{
               marginBottom: 6,
               fontSize: { xs: '2rem', md: '3rem' },
               fontWeight: 700,
-              color: '#1A1A1A',
+              color: '#1A1A1A'
             }}
           >
             About T3 Innovation Network
@@ -172,33 +169,33 @@ const Home = () => {
               fontSize: '1.2rem',
               lineHeight: 1.8,
               color: '#666666',
-              textAlign: 'center',
+              textAlign: 'center'
             }}
           >
-            The T3 Innovation Network is exploring emerging technologies and
-            standards in the talent marketplace to create more equitable and
-            effective learning and career pathways.
+            The T3 Innovation Network is exploring emerging technologies and standards in
+            the talent marketplace to create more equitable and effective learning and
+            career pathways.
           </Typography>
         </Container>
       </Box>
 
       {/* Projects Section */}
       <Box
-        id="projects"
+        id='projects'
         sx={{
           padding: { xs: '60px 20px', md: '80px 40px' },
-          background: '#FFFFFF',
+          background: '#FFFFFF'
         }}
       >
-        <Container maxWidth="lg">
+        <Container maxWidth='lg'>
           <Typography
-            variant="h2"
-            align="center"
+            variant='h2'
+            align='center'
             sx={{
               marginBottom: 6,
               fontSize: { xs: '2rem', md: '3rem' },
               fontWeight: 700,
-              color: '#1A1A1A',
+              color: '#1A1A1A'
             }}
           >
             Our Projects
@@ -208,7 +205,7 @@ const Home = () => {
             sx={{
               display: 'grid',
               gridTemplateColumns: { xs: '1fr', md: 'repeat(2, 1fr)' },
-              gap: 4,
+              gap: 4
             }}
           >
             {/* linkedCreds Project */}
@@ -216,53 +213,50 @@ const Home = () => {
               sx={{
                 height: '100%',
                 borderRadius: '16px',
-                transition:
-                  'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+                transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
                 '&:hover': {
                   transform: 'translateY(-8px)',
-                  boxShadow: '0 12px 24px rgba(0,0,0,0.1)',
-                },
+                  boxShadow: '0 12px 24px rgba(0,0,0,0.1)'
+                }
               }}
             >
               <CardMedia
-                component="img"
-                height="240"
-                image="../images/opencreds.png"
-                alt="linkedCreds Platform Preview"
+                component='img'
+                height='240'
+                image='../images/opencreds.png'
+                alt='linkedCreds Platform Preview'
                 sx={{
-                  objectFit: 'cover',
+                  objectFit: 'cover'
                 }}
               />
               <CardContent sx={{ p: 4 }}>
                 <Typography
-                  variant="h3"
+                  variant='h3'
                   sx={{
                     marginBottom: 2,
                     fontSize: '1.75rem',
                     fontWeight: 700,
-                    color: '#1A1A1A',
+                    color: '#1A1A1A'
                   }}
                 >
                   LinkedCreds
                 </Typography>
-                <Typography
-                  sx={{ color: '#666666', fontSize: '1.1rem', mb: 3 }}
-                >
-                  A platform for issuing and managing verifiable credentials,
-                  enhancing trust and transparency in the talent marketplace.
+                <Typography sx={{ color: '#666666', fontSize: '1.1rem', mb: 3 }}>
+                  A platform for issuing and managing verifiable credentials, enhancing
+                  trust and transparency in the talent marketplace.
                 </Typography>
                 <Button
-                  variant="contained"
-                  href="https://linkedcreds.allskillscount.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  variant='contained'
+                  href='https://linkedcreds.allskillscount.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   sx={{
                     backgroundColor: '#4C3AE3',
                     '&:hover': {
                       backgroundColor: '#3929B4',
                       transform: 'translateY(-2px)',
-                      boxShadow: '0 4px 12px rgba(76, 58, 227, 0.3)',
-                    },
+                      boxShadow: '0 4px 12px rgba(76, 58, 227, 0.3)'
+                    }
                   }}
                 >
                   Try Now
@@ -275,54 +269,50 @@ const Home = () => {
               sx={{
                 height: '100%',
                 borderRadius: '16px',
-                transition:
-                  'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
+                transition: 'transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out',
                 '&:hover': {
                   transform: 'translateY(-8px)',
-                  boxShadow: '0 12px 24px rgba(0,0,0,0.1)',
-                },
+                  boxShadow: '0 12px 24px rgba(0,0,0,0.1)'
+                }
               }}
             >
               <CardMedia
-                component="img"
-                height="240"
-                image="../images/reusmeauthor.png"
-                alt="Resume Author Platform Preview"
+                component='img'
+                height='240'
+                image='../images/reusmeauthor.png'
+                alt='Resume Author Platform Preview'
                 sx={{
-                  objectFit: 'cover',
+                  objectFit: 'cover'
                 }}
               />
               <CardContent sx={{ p: 4 }}>
                 <Typography
-                  variant="h3"
+                  variant='h3'
                   sx={{
                     marginBottom: 2,
                     fontSize: '1.75rem',
                     fontWeight: 700,
-                    color: '#1A1A1A',
+                    color: '#1A1A1A'
                   }}
                 >
                   Resume Author
                 </Typography>
-                <Typography
-                  sx={{ color: '#666666', fontSize: '1.1rem', mb: 3 }}
-                >
-                  A web-based tool to create and manage verifiable resumes,
-                  empowering individuals to showcase their skills and
-                  experiences securely.
+                <Typography sx={{ color: '#666666', fontSize: '1.1rem', mb: 3 }}>
+                  A web-based tool to create and manage verifiable resumes, empowering
+                  individuals to showcase their skills and experiences securely.
                 </Typography>
                 <Button
-                  variant="contained"
-                  href="https://resume.allskillscount.org/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  variant='contained'
+                  href='https://resume.allskillscount.org/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   sx={{
                     backgroundColor: '#4C3AE3',
                     '&:hover': {
                       backgroundColor: '#3929B4',
                       transform: 'translateY(-2px)',
-                      boxShadow: '0 4px 12px rgba(76, 58, 227, 0.3)',
-                    },
+                      boxShadow: '0 4px 12px rgba(76, 58, 227, 0.3)'
+                    }
                   }}
                 >
                   Try Now
@@ -337,7 +327,7 @@ const Home = () => {
       {showScrollTop && (
         <Fab
           onClick={scrollToTop}
-          aria-label="Scroll to top"
+          aria-label='Scroll to top'
           sx={{
             position: 'fixed',
             bottom: '2rem',
@@ -345,15 +335,15 @@ const Home = () => {
             backgroundColor: '#4C3AE3',
             color: '#FFFFFF',
             '&:hover': {
-              backgroundColor: '#3929B4',
-            },
+              backgroundColor: '#3929B4'
+            }
           }}
         >
           ↑
         </Fab>
       )}
     </Box>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
