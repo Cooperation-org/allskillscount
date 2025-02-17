@@ -211,7 +211,7 @@ const Home = () => {
               gap: 4,
             }}
           >
-            {/* OpenCreds Project */}
+            {/* linkedCreds Project */}
             <Card
               sx={{
                 height: '100%',
@@ -228,7 +228,7 @@ const Home = () => {
                 component="img"
                 height="240"
                 image="../images/opencreds.png"
-                alt="OpenCreds Platform Preview"
+                alt="linkedCreds Platform Preview"
                 sx={{
                   objectFit: 'cover',
                 }}
@@ -243,7 +243,7 @@ const Home = () => {
                     color: '#1A1A1A',
                   }}
                 >
-                  OpenCreds
+                  LinkedCreds
                 </Typography>
                 <Typography
                   sx={{ color: '#666666', fontSize: '1.1rem', mb: 3 }}
@@ -253,7 +253,7 @@ const Home = () => {
                 </Typography>
                 <Button
                   variant="contained"
-                  href="https://linkedclaims-author.allskillscount.org/"
+                  href="https://linkedcreds.allskillscount.org/"
                   target="_blank"
                   rel="noopener noreferrer"
                   sx={{
