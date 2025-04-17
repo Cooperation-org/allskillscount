@@ -204,13 +204,13 @@ const Home: React.FC = () => {
               {
                 title: 'LinkedCreds',
                 desc: 'LinkedCreds is a web‑based tool for self‑authoring, issuing, and managing verifiable credentials and companion recommendations, to enhance trust and transparency in the talent marketplace.',
-                img: '/public/images/opencreds.png',
+                img: '/images/opencreds.png',
                 url: 'https://linkedcreds.allskillscount.org/'
               },
               {
                 title: 'Resume Author',
                 desc: 'Resume Author is a web‑based tool to create and manage verifiable resumes, empowering individuals to showcase their skills and experiences securely. With Resume Author, you can leverage Learning Experience Records (LERs), data schema standards crosswalks, AI‑enhanced job position authoring, and standardized employment records exchange between employers and government agencies.',
-                img: '/public/images/reusmeauthor.png',
+                img: '/images/reusmeauthor.png',
                 url: 'https://resume.allskillscount.org/'
               }
             ].map(({ title, desc, img, url }) => (
