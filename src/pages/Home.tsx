@@ -75,7 +75,7 @@ const Home: React.FC = () => {
                 standards (W3C&nbsp;WCAG&nbsp;VCDM&nbsp;v2, 1EdTech&nbsp;OB&nbsp;v3,
                 HR&nbsp;Open Standards&nbsp;LER‑RS&nbsp;v2) in the talent marketplace to
                 establish more equitable and effective learning and career pathways. */}
-                The T3 Innovation Network is investigating emerging technologies and
+                {/* The T3 Innovation Network is investigating emerging technologies and
                 standards (W3C VCDMv2, 1Edtech OBv3, HR Open Standards LER-RSv2) in the
                 talent marketplace to establish more equitable and effective learning and
                 career pathways. This collection includes applications that encompass a
@@ -86,7 +86,16 @@ const Home: React.FC = () => {
                 exchange between employers and government agencies. These applications
                 span from Proof of Concepts to near-production-ready tools. Some are fully
                 open-source, with Apache2-licensed code, while others incorporate
-                open-source components within licensed code.
+                open-source components within licensed code. */}
+                The T3 Innovation Network is investigating emerging technologies and
+                standards (W3C VCDMv2, 1Edtech OBv3, HR Open Standards LER-RSv2) in the
+                talent marketplace to establish more equitable and effective learning and
+                career pathways.
+                <br />
+                These projects all serve to support skills-based hiring and advancement.
+                Applications are Proof of Concepts to near-production-ready tools. Some
+                are fully open-source, with Apache2-licensed code, while others
+                incorporate open-source components within licensed code.
               </Typography>
 
               <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
