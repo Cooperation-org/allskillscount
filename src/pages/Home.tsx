@@ -72,6 +72,10 @@ const Home: React.FC = () => {
                     label: 'LinkedCreds'
                   },
                   {
+                    href: 'https://linked-creds-author-businees-enhancement.vercel.app/',
+                    label: 'LinkedCreds-Business'
+                  },
+                  {
                     href: 'https://resume.allskillscount.org/',
                     label: 'Resume Author'
                   }
