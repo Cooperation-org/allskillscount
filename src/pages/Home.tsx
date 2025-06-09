@@ -184,11 +184,16 @@ const Home: React.FC = () => {
                 url: 'https://linkedcreds.allskillscount.org/'
               },
               {
-                title: 'LinkedCreds-Business',
-                desc: 'LinkedCreds-Business is a self-authoring skills credentialing LER tool designed for businesses that wish to:\n• issue Employment Credentials confirming an individual is a current employee of their company, endorsed by their supervisor\n• enable employees to write Performance Reviews Credentials for review and endorsement by their supervisor\n• encourage employee recognition for their volunteerism activities through the issuance of Volunteerism Credentials, endorsed by their supervisor.',
+                title: 'LinkedCreds: Business',
+                desc:
+                  'LinkedCreds:Business is a self-authoring skills credentialing LER tool designed for businesses that wish to:\n' +
+                  '• issue Employment Credentials confirming an individual is a current employee of their company\n' +
+                  '• enable employees to write Performance Reviews Credentials for review and endorsement by their supervisor\n' +
+                  '• encourage employee recognition for their volunteerism activities through the issuance of Volunteerism Credentials',
                 img: '/images/opencreds.png',
                 url: 'https://linked-creds-author-businees-enhancement.vercel.app/'
               },
+
               {
                 title: 'Resume Author',
                 desc: 'Resume Author is a web-based tool to create and manage verifiable resumes, empowering individuals to showcase their skills and experiences securely. With Resume Author, you can leverage Learning Experience Records (LERs), data schema standards crosswalks, AI-enhanced job position authoring, and standardized employment records exchange between employers and government agencies.',
@@ -252,7 +257,7 @@ const Home: React.FC = () => {
                       mt: 1
                     }}
                   >
-                    Try Now
+                    Try It now!
                   </Button>
                 </CardContent>
               </Card>
