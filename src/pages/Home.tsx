@@ -9,26 +9,9 @@ import {
   CardContent,
   CardMedia,
   Container
-  // Fab
 } from '@mui/material'
 
-/**
- * Home component
- * Fully responsive (mobile‑first) using only MUI <Box> for layout (no CSS grid).
- * Fonts, colours, and imagery match the original static HTML/CSS but adapt at
- * every breakpoint to eliminate fixed widths / heights.
- */
 const Home: React.FC = () => {
-  // const [showScrollTop, setShowScrollTop] = useState(false)
-
-  // useEffect(() => {
-  //   const onScroll = () => setShowScrollTop(window.scrollY > 400)
-  //   window.addEventListener('scroll', onScroll)
-  //   return () => window.removeEventListener('scroll', onScroll)
-  // }, [])
-
-  // const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' }) NO
-
   return (
     <Box component='main' sx={{ width: '100%', overflowX: 'hidden' }}>
       <Box
@@ -71,22 +54,6 @@ const Home: React.FC = () => {
                   mb: 5
                 }}
               >
-                {/* The T3 Innovation Network is investigating emerging technologies and
-                standards (W3C&nbsp;WCAG&nbsp;VCDM&nbsp;v2, 1EdTech&nbsp;OB&nbsp;v3,
-                HR&nbsp;Open Standards&nbsp;LER‑RS&nbsp;v2) in the talent marketplace to
-                establish more equitable and effective learning and career pathways. */}
-                {/* The T3 Innovation Network is investigating emerging technologies and
-                standards (W3C VCDMv2, 1Edtech OBv3, HR Open Standards LER-RSv2) in the
-                talent marketplace to establish more equitable and effective learning and
-                career pathways. This collection includes applications that encompass a
-                web-based tool for self-authoring skill credentials and companion
-                recommendation credentials supporting them, a resume authoring using
-                Learning Experience Records (LERs), data schema standards crosswalks,
-                AI-enhanced job position authoring, and standardized employment records
-                exchange between employers and government agencies. These applications
-                span from Proof of Concepts to near-production-ready tools. Some are fully
-                open-source, with Apache2-licensed code, while others incorporate
-                open-source components within licensed code. */}
                 The T3 Innovation Network is investigating emerging technologies and
                 standards (W3C VCDMv2, 1Edtech OBv3, HR Open Standards LER-RSv2) in the
                 talent marketplace to establish more equitable and effective learning and
@@ -183,7 +150,7 @@ const Home: React.FC = () => {
             unlock opportunity. Led by the U.S. Chamber of Commerce Foundation, T3 is
             building an open, trusted digital infrastructure for education and workforce
             data—empowering learners, workers, and employers with interoperable solutions
-            for skills‑based hiring, learning pathways, and verifiable credentials.
+            for skills-based hiring, learning pathways, and verifiable credentials.
           </Typography>
         </Container>
       </Box>
@@ -212,13 +179,24 @@ const Home: React.FC = () => {
             {[
               {
                 title: 'LinkedCreds',
-                desc: 'LinkedCreds is a web‑based tool for self‑authoring, issuing, and managing verifiable credentials and companion recommendations, to enhance trust and transparency in the talent marketplace.',
+                desc: 'LinkedCreds is a web-based tool for self-authoring, issuing, and managing verifiable credentials and companion recommendations, to enhance trust and transparency in the talent marketplace.',
                 img: '/images/opencreds.png',
                 url: 'https://linkedcreds.allskillscount.org/'
               },
               {
+                title: 'LinkedCreds: Business',
+                desc:
+                  'LinkedCreds:Business is a self-authoring skills credentialing LER tool designed for businesses that wish to:\n' +
+                  '• issue Employment Credentials confirming an individual is a current employee of their company\n' +
+                  '• enable employees to write Performance Reviews Credentials for review and endorsement by their supervisor\n' +
+                  '• encourage employee recognition for their volunteerism activities through the issuance of Volunteerism Credentials',
+                img: '/images/opencreds.png',
+                url: 'https://linked-creds-author-businees-enhancement.vercel.app/'
+              },
+
+              {
                 title: 'Resume Author',
-                desc: 'Resume Author is a web‑based tool to create and manage verifiable resumes, empowering individuals to showcase their skills and experiences securely. With Resume Author, you can leverage Learning Experience Records (LERs), data schema standards crosswalks, AI‑enhanced job position authoring, and standardized employment records exchange between employers and government agencies.',
+                desc: 'Resume Author is a web-based tool to create and manage verifiable resumes, empowering individuals to showcase their skills and experiences securely. With Resume Author, you can leverage Learning Experience Records (LERs), data schema standards crosswalks, AI-enhanced job position authoring, and standardized employment records exchange between employers and government agencies.',
                 img: '/images/reusmeauthor.png',
                 url: 'https://resume.allskillscount.org/'
               }
@@ -255,6 +233,7 @@ const Home: React.FC = () => {
                   </Typography>
                   <Typography
                     sx={{
+                      whiteSpace: 'pre-line',
                       flexGrow: 1,
                       color: '#666',
                       fontSize: { xs: '0.95rem', md: '1rem' }
@@ -278,7 +257,7 @@ const Home: React.FC = () => {
                       mt: 1
                     }}
                   >
-                    Try Now
+                    Try It now!
                   </Button>
                 </CardContent>
               </Card>
@@ -323,7 +302,7 @@ const Home: React.FC = () => {
                   whiteSpace: { xs: 'normal', md: 'nowrap' }
                 }}
               >
-                Copyright, Creative Commons License&nbsp;BY&nbsp;4.0
+                Copyright, Creative Commons License BY 4.0
               </Typography>
             </Box>
 
@@ -364,7 +343,7 @@ const Home: React.FC = () => {
                   color: '#47516B'
                 }}
               >
-                Contact&nbsp;Us:&nbsp;
+                Contact Us:{' '}
                 <Button
                   component='a'
                   href='mailto:support@allskillscount.org'
@@ -387,22 +366,6 @@ const Home: React.FC = () => {
           </Box>
         </Container>
       </Box>
-      {/* {showScrollTop && (
-        <Fab
-          onClick={scrollToTop}
-          aria-label='scroll back to top'
-          sx={{
-            position: 'fixed',
-            bottom: 32,
-            right: 32,
-            backgroundColor: '#4C3AE3',
-            color: '#FFF',
-            '&:hover': { backgroundColor: '#3929B4' }
-          }}
-        >
-          ↑
-        </Fab>
-      // )} */}{' '}
     </Box>
   )
 }
