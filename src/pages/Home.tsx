@@ -185,7 +185,7 @@ const Home: React.FC = () => {
               },
               {
                 title: 'LinkedCreds-Business',
-                desc: "LinkedCreds-Business is a self-authoring skills credentialing LER tool designed for businesses that wish to:\n• issue Employment Credentials confirming an individual is a current employee of their company, endorsed by their supervisor\n• enable employees to write Performance Reviews Credentials for review and endorsement by their supervisor\n• encourage employee recognition for their volunteerism activities through the issuance of Volunteerism Credentials, endorsed by their supervisor.\n\nEndorsement of the Volunteerism Credential by an employee's supervisor is at the discretion of the business's policies, but encouraged.",
+                desc: 'LinkedCreds-Business is a self-authoring skills credentialing LER tool designed for businesses that wish to:\n• issue Employment Credentials confirming an individual is a current employee of their company, endorsed by their supervisor\n• enable employees to write Performance Reviews Credentials for review and endorsement by their supervisor\n• encourage employee recognition for their volunteerism activities through the issuance of Volunteerism Credentials, endorsed by their supervisor.',
                 img: '/images/opencreds.png',
                 url: 'https://linked-creds-author-businees-enhancement.vercel.app/'
               },
