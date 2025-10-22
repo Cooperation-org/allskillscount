@@ -123,7 +123,7 @@ const Home: React.FC = () => {
           </Box>
         </Container>
       </Box>
-      <Box sx={{ background: '#F8F9FA', py: { xs: 8, md: 12 }, px: 2 }}>
+      <Box id='about' sx={{ background: '#F8F9FA', py: { xs: 8, md: 12 }, px: 2 }}>
         <Container maxWidth='md'>
           <Typography
             sx={{
@@ -158,7 +158,7 @@ const Home: React.FC = () => {
           </Typography>
         </Container>
       </Box>
-      <Box sx={{ background: '#FFF', py: { xs: 8, md: 12 }, px: 2 }}>
+      <Box id='projects' sx={{ background: '#FFF', py: { xs: 8, md: 12 }, px: 2 }}>
         <Container maxWidth='lg'>
           <Typography
             sx={{
